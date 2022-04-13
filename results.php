@@ -1,11 +1,10 @@
 <?php
-// get the base and height from the textfields
-$side_a = $_POST['side-a'];
-$side_b = $_POST['side-b'];
-$height = $_POST['height'];
+// get the length of radius of sphere from the textfields
+$radius = $_POST['radius'];
 
 // calculate the area
-$area = ($side_a + $side_b) * $height / 2;
+$volume = $radius ** 3 * (4/3) * pi();
+$volume_rounded = number_format($volume, 2);
 ?>
 
-The area of the trapezoid is <?php echo "$area"; ?> cm<sup>2</sup>.
+The volume of the sphere is <?php echo "$volume_rounded"; ?> cm<sup>3</sup>.

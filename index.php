@@ -26,13 +26,9 @@
       echo "<h3>Enter the dimensions of your sphere:</h3>";
       ?>
       <form action="./results.php" method="post" target="results">
-        <label for="Side-a">Side a (cm):</label>
-        <input type="number" step="any" name="side-a" placeholder="Side A"><br><br>
-        <label for="side-b">Side b (cm):</label>
-        <input type="number" step="any" name="side-b" placeholder="Side B"><br><br>
-        <label for="Height">Height (cm):</label>
-        <input type="number" step="any" name="height" placeholder="Height"><br><br>
-        <input type="submit" value="Calculate Area">
+        <label for="radius">Length of radius of sphere in (cm):</label>
+        <input type="number" step="any" name="radius" placeholder="Radius"><br><br>
+        <input type="submit" value="Calculate Volume">
       </form>
     </p>
 		<!-- Create a space where the user information will be displayed -->
